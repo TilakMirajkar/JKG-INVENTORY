@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4">{{ supplier.name }}</h1>
+    <p><strong>Contact Info:</strong> {{ supplier.contact_info }}</p>
+    <p><strong>Address:</strong> {{ supplier.address }}</p>
+</div>
+{% endblock %}

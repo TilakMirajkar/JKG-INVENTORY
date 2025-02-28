@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4">Delete Sales Order</h1>
+    <p>Are you sure you want to delete the sales order for <strong>{{ sales_order.item.name }}</strong>?</p>
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Delete</button>
+        <a href="{% url 'sales_order_list' %}" class="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">Cancel</a>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4">Suppliers</h1>
+    <a href="{% url 'supplier_create' %}" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Add Supplier</a>
+    <div class="mt-6">
+        {% for supplier in suppliers %}
+            <div class="bg-white p-4 rounded-lg shadow-md mb-4">
+                <h2 class="text-xl font-bold">{{ supplier.name }}</h2>
+                <p>{{ supplier.contact_info }}</p>
+                <a href="{% url 'supplier_detail' supplier.id %}" class="text-blue-500 hover:underline">View Details</a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+<nav class="bg-blue-600 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="{% url 'item_list' %}" class="text-white text-xl font-bold">JKG Inventoryc Management</a>
+        <div class="space-x-4">
+            <a href="{% url 'supplier_list' %}" class="text-white hover:text-gray-200">Suppliers</a>
+            <a href="{% url 'category_list' %}" class="text-white hover:text-gray-200">Categories</a>
+            <a href="{% url 'item_list' %}" class="text-white hover:text-gray-200">Items</a>
+            <a href="{% url 'purchase_order_list' %}" class="text-white hover:text-gray-200">Purchase Orders</a>
+            <a href="{% url 'sales_order_list' %}" class="text-white hover:text-gray-200">Sales Orders</a>
+        </div>
+    </div>
+</nav>

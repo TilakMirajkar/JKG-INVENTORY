@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-2xl font-bold mb-4">{{ purchase_order.item.name }}</h1>
+    <p><strong>Quantity:</strong> {{ purchase_order.quantity }}</p>
+    <p><strong>Order Date:</strong> {{ purchase_order.order_date }}</p>
+    <p><strong>Status:</strong> {{ purchase_order.status }}</p>
+</div>
+{% endblock %}
