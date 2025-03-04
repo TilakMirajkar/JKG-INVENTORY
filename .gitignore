@@ -1,7 +1,8 @@
 env/
 .env
-static/
 db.sqlite3
 app/__pycache__/
 app/migrations/
 inventory/__pycache__/
+authentication/__pycache__
+authentication/migrations
